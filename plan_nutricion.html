@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>El título va aquí - Plan de Nutrición</title>
+    <link rel="stylesheet" href="estilos/estilos3.css">
+    <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body>
+    <div class="min-h-screen bg-gray-100">
+        <nav class="bg-white shadow-md">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="flex justify-between h-16">
+                    <div class="flex">
+                        <div class="flex-shrink-0 flex items-center">
+                            <span class="text-2xl font-bold text-green-600">El título va aquí</span>
+                        </div>
+                    </div>
+                    <div class="flex items-center">
+                        <button class="button button-ghost button-icon">
+                            <i data-lucide="bell"></i>
+                        </button>
+                        <div class="avatar ml-3">
+                            <img src="imagenejemplo2.png">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+        <main class="max-w-7xl mx-auto py-6 sm:px-6 lg:px-8">
+            <div class="px-4 py-6 sm:px-0">
+                <h1 class="text-3xl font-semibold text-gray-900 mb-6">Plan de Nutrición</h1>
+                
+                <div class="grid grid-cols-1 gap-6 md:grid-cols-3">
+                    <div class="card">
+                        <div class="card-header">
+                            <h2 class="card-title">Calorías Diarias</h2>
+                        </div>
+                        <div class="card-content">
+                            <div class="text-3xl font-bold">1700 / 2000</div>
+                            <div class="progress mt-2">
+                                <div class="progress-bar" style="width: 85%;"></div>
+                            </div>
+                            <p class="text-sm text-gray-500 mt-2">85% de tu objetivo diario</p>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="card-header">
+                            <h2 class="card-title">Macronutrientes</h2>
+                        </div>
+                        <div class="card-content">
+                            <div class="space-y-4">
+                                <div>
+                                    <div class="flex justify-between text-sm font-medium">
+                                        <span>Proteínas</span>
+                                        <span>75g / 100g</span>
+                                    </div>
+                                    <div class="progress mt-2">
+                                        <div class="progress-bar" style="width: 75%;"></div>
+                                    </div>
+                                </div>
+                                <div>
+                                    <div class="flex justify-between text-sm font-medium">
+                                        <span>Carbohidratos</span>
+                                        <span>150g / 200g</span>
+                                    </div>
+                                    <div class="progress mt-2">
+                                        <div class="progress-bar" style="width: 75%;"></div>
+                                    </div>
+                                </div>
+                                <div>
+                                    <div class="flex justify-between text-sm font-medium">
+                                        <span>Grasas</span>
+                                        <span>45g / 60g</span>
+                                    </div>
+                                    <div class="progress mt-2">
+                                        <div class="progress-bar" style="width: 75%;"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="card-header">
+                            <h2 class="card-title">Consumo de Agua</h2>
+                        </div>
+                        <div class="card-content">
+                            <div class="text-3xl font-bold mb-2">1.5 / 2.5 L</div>
+                            <div class="progress mb-2">
+                                <div class="progress-bar" style="width: 60%;"></div>
+                            </div>
+                            <button class="button w-full">Añadir vaso de agua</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card mt-6">
+                    <div class="card-header">
+                        <h2 class="card-title">Plan de Comidas</h2>
+                    </div>
+                    <div class="card-content">
+                        <div class="tabs">
+                            <div class="tabs-list">
+                                <button class="tab-trigger active">Hoy</button>
+                                <button class="tab-trigger">Mañana</button>
+                                <button class="tab-trigger">Esta Semana</button>
+                            </div>
+                            <div class="tab-content">
+                                <div class="space-y-4">
+                                    <div class="flex items-center justify-between p-4 bg-white rounded-lg shadow">
+                                        <div class="flex items-center">
+                                            <i data-lucide="utensils" class="h-6 w-6 text-green-500 mr-3"></i>
+                                            <div>
+                                                <h3 class="font-semibold">Desayuno</h3>
+                                                <p class="text-sm text-gray-500">8:00 AM</p>
+                                            </div>
+                                        </div>
+                                        <div class="flex items-center">
+                                            <span class="mr-2">400 kcal</span>
+                                            <i data-lucide="chevron-right" class="h-5 w-5 text-gray-400"></i>
+                                        </div>
+                                    </div>
+                                    <!-- Repeat for other meals -->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card mt-6">
+                    <div class="card-header">
+                        <h2 class="card-title">Recomendaciones de Alimentos</h2>
+                    </div>
+                    <div class="card-content">
+                        <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+                            <button class="button button-outline h-auto py-4 flex flex-col items-center justify-center">
+                                <i data-lucide="apple" class="h-8 w-8 mb-2"></i>
+                                <span>Frutas</span>
+                            </button>
+                            <button class="button button-outline h-auto py-4 flex flex-col items-center justify-center">
+                                <i data-lucide="fish" class="h-8 w-8 mb-2"></i>
+                                <span>Proteínas</span>
+                            </button>
+                            <button class="button button-outline h-auto py-4 flex flex-col items-center justify-center">
+                                <i data-lucide="utensils" class="h-8 w-8 mb-2"></i>
+                                <span>Carbohidratos</span>
+                            </button>
+                            <button class="button button-outline h-auto py-4 flex flex-col items-center justify-center">
+                                <i data-lucide="utensils" class="h-8 w-8 mb-2"></i>
+                                <span>Grasas Saludables</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card mt-6">
+                    <div class="card-header">
+                        <h2 class="card-title">Consejo Nutricional del Día</h2>
+                    </div>
+                    <div class="card-content">
+                        <p class="text-gray-600">
+                            Incluye una variedad de colores en tus comidas. Los alimentos de diferentes colores proporcionan diversos nutrientes esenciales para tu salud.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+    <script>
+        lucide.createIcons();
+    </script>
+</body>
+</html>

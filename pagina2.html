@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="/estilos/estilos2.css">
+    <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body>
+    <header>
+        <div class="logo">Dashboard - Shrek</div>
+        <nav>
+            <button class="icon-button"><i data-lucide="bell"></i></button>
+            <button class="icon-button"><i data-lucide="user"></i></button>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Dashboard</h1>
+        
+        <div class="grid">
+            <div class="card">
+                <div class="card-icon green"><i data-lucide="utensils"></i></div>
+                <div class="card-content">
+                    <h3>Calorías consumidas hoy</h3>
+                    <p class="large-text">1,500 / 2,000</p>
+                </div>
+                <a href="#" class="card-link">Ver detalles</a>
+            </div>
+
+            <div class="card">
+                <div class="card-icon green"><i data-lucide="activity"></i></div>
+                <div class="card-content">
+                    <h3>Minutos de ejercicio hoy</h3>
+                    <p class="large-text">45 / 60</p>
+                </div>
+                <a href="#" class="card-link">Ver detalles</a>
+            </div>
+
+            <div class="card">
+                <div class="card-icon green"><i data-lucide="calendar"></i></div>
+                <div class="card-content">
+                    <h3>Progreso semanal</h3>
+                    <p class="large-text">85%</p>
+                </div>
+                <a href="#" class="card-link">Ver detalles</a>
+            </div>
+
+            <div class="card wide">
+                <h2>Progreso Semanal</h2>
+                <div class="chart-placeholder">
+                    <i data-lucide="trending-up"></i>
+                </div>
+            </div>
+
+            <div class="card">
+                <h2>Resumen de Nutrición</h2>
+                <div class="nutrition-summary">
+                    <div class="nutrition-item">
+                        <span>Proteínas</span>
+                        <div class="progress-bar">
+                            <div class="progress" style="width: 75%"></div>
+                        </div>
+                        <span>75g / 100g</span>
+                    </div>
+                    <div class="nutrition-item">
+                        <span>Carbohidratos</span>
+                        <div class="progress-bar">
+                            <div class="progress" style="width: 75%"></div>
+                        </div>
+                        <span>150g / 200g</span>
+                    </div>
+                    <div class="nutrition-item">
+                        <span>Grasas</span>
+                        <div class="progress-bar">
+                            <div class="progress" style="width: 75%"></div>
+                        </div>
+                        <span>45g / 60g</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <h2>Consumo de Agua</h2>
+                <div class="water-consumption">
+                    <i data-lucide="droplet"></i>
+                    <span class="large-text">4 / 8</span>
+                    <button class="button">Añadir vaso</button>
+                </div>
+                <div class="progress-bar">
+                    <div class="progress" style="width: 50%"></div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script>
+        lucide.createIcons();
+    </script>
+</body>
+</html>
